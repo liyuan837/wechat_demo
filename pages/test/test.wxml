@@ -1,0 +1,95 @@
+<view>
+  <view>
+    <text>纵向scrollview</text>
+    <scroll-view scroll-y style='height:200px' bindscrolltoupper="topper" bindscrolltolower="bottomer" bindscroll="scroller" scroll-left="100" scroll-top="{{scrollTop}}">
+      <view style='height:150px;background:red'></view>
+      <view style='height:150px;background:green'></view>
+      <view style='height:150px;background:yellow'></view>
+    </scroll-view>
+    <button bindtap='topMove1'>滚动</button>
+  </view>
+
+  <view>
+    <text>横向scrollview</text>
+    <scroll-view scroll-x style='width:100%' bindscrolltoupper="lefter" bindscrolltolower="righter" bindscroll="scroller" scroll-left="100" scroll-left="{{scrollLeft}}">
+    <view class='scroll-view-h'>
+      <view class='scroll-view-item-h' style='height:150px;background:red'></view>
+      <view class='scroll-view-item-h' style='height:150px;background:green'></view>
+      <view class='scroll-view-item-h' style='height:150px;background:yellow'></view>
+      </view>
+    </scroll-view>
+    <button bindtap='topMove2'>滚动</button>
+  </view>
+
+  <view>
+    <text>icon演示</text>
+    <view style='display:flex;direction:row;margin:30px;align-items: center;'>
+      <icon class='icon-view' style="margin-right:30px" type='success' size='100' color="green"></icon>
+      <view class='tip-view'>
+        <view>成功</view>
+        <view style="font-size:12px;color:#999">成功提示图标</view>
+      </view>
+    </view>
+  </view>
+
+  <view>
+    <text>form演示</text>
+    <form>
+      <view>
+        <checkbox-group>
+          <label><checkbox></checkbox>选择</label>
+          <label><checkbox></checkbox>选择</label>
+        </checkbox-group>
+      </view>
+
+      <view>
+        <input type='text' confirm-type='next'></input>
+      </view>
+    </form>
+  </view>
+
+  <view>
+    <text>媒体组件</text>
+    <view>
+      <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+      <button type="primary" bindtap="audioPlay">播放</button>
+      <button type="primary" bindtap="audioPause">暂停</button>
+      <button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
+      <button type="primary" bindtap="audioStart">回到开头</button>
+    </view>
+  </view>
+
+  <view>
+    <text>视频组件</text>
+    <view class="section tc">
+      <video src="{{src}}"   controls ></video>
+      <view class="btn-area">
+        <button bindtap="bindButtonTap">获取视频</button>
+      </view>
+    </view>
+
+    <view class="section tc">
+      <video id="myVideo" src="http://www.dyjkglass.com/biye.mp4" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+      <view class="btn-area">
+        <input bindblur="bindInputBlur"/>
+        <button bindtap="bindSendDanmu">发送弹幕</button>
+      </view>
+    </view>
+  </view>
+  <view class="page">
+  <view class="page__hd">
+    <text class="page__title">image</text>
+    <text class="page__desc">图片</text>
+  </view>
+  <view class="page__bd">
+    <view class="section section_gap">
+      <view class="section__ctn">
+        <image style="width: 200px; height: 100px; background-color: #eeeeee;" mode="scaleToFill" src="http://www.dyjkglass.com/qiangu.png"></image>
+      </view>
+       <view class="section__ctn">
+        <image style="width: 200px; height: 100px; background-color: #eeeeee;" mode="aspectFit" src="http://www.dyjkglass.com/qiangu.png"></image>
+      </view>
+    </view>
+  </view>
+</view>
+</view>

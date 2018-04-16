@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test/test",
+    "pages/wxsstest/wxsstest",
+    "pages/wxmltest/wxmltest"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#f0f",
+    "navigationBarTitleText": "微信小程序",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "default",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#f0f",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home.png",
+        "text": "tab1"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home.png",
+        "text": "tab2"
+      }
+    ]
+  },
+  "debug": true,
+  "networkTimeout": 10000
+}

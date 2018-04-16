@@ -1,0 +1,8 @@
+<view class='container'>
+  <button type='primary'>测试按钮</button>
+  <view class='aa' style='border:solid 1px red'>aaa</view>
+
+  <view class='pp'>
+  pp
+  </view>
+</view>

@@ -1,0 +1,9 @@
+<view>
+  <view id="item-{{id}}">{{name}}</view>
+  <view wx:if="{{isShow}}">有木有</view>
+  <view wx:if="{{flag?false:true}}">有木有</view>
+  <view>{{a+b}}</view>
+  <view>{{a}}+{{b}}</view>
+
+  <button bindtap='changeState'>改变显示</button>
+</view>

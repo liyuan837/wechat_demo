@@ -1,0 +1,12 @@
+/* pages/test/test.wxss */
+.scroll-view-h{
+  display: flex;
+  height: 100px;
+  width: 500px;
+  flex-direction: row;
+}
+
+.scroll-view-item-h{
+  width:300px;
+  height: 100%;
+}
