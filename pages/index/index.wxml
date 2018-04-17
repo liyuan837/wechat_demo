@@ -12,6 +12,9 @@
     <navigator url="/pages/test/test" open-type='navigate' hover-class="none">跳转组件</navigator>
     <navigator url="/pages/wxsstest/wxsstest" open-type='navigate' hover-class="none">跳转样式</navigator>
     <navigator url="/pages/wxmltest/wxmltest" open-type='navigate' hover-class="none">跳转页面</navigator>
+    <navigator url="/pages/eventtest/eventtest" open-type='navigate' hover-class="none">跳转事件</navigator>
+    <navigator url="/pages/yinyongtest/yinyongtest" open-type='navigate' hover-class="none">跳转引用</navigator>
+    <navigator url="/pages/apitest/apitest" open-type='navigate' hover-class="none">跳转API</navigator>
   </view>
 
   

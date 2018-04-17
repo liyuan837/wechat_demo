@@ -1,24 +1,14 @@
-// pages/wxmltest/wxmltest.js
+// pages/yinyongtest/yinyongtest.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    id:1000,
-    name:"李袁",
-    isShow:true,
-    flag:false,
-    a:1,
-    b:2,
-    person:{name:'甄姬',age:10},
-    personList:[{
-      name:'Liyuan',
+    person:{
+      name:'李袁',
       age:28
-    },{
-      name:'昭君',
-      age:22
-    }]
+    }
   },
 
   /**
@@ -74,11 +64,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    console.log("s");
-  },
-  changeState:function(){
-    this.setData({
-      flag:!this.data.flag
-    })
+  
   }
 })

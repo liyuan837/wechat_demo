@@ -1,0 +1,16 @@
+<view data-name="liyuan" bindtap='bindtap1'>
+点我
+</view>
+
+<view>
+  <text>事件冒泡</text>
+  <view id="outer" bindtap='bindtap_outer'>
+    outer view
+    <view id="middle" bindtap='bindtap_middle'>
+      middle view
+      <view id="inner" bindtap='bindtap_inner'>
+        inner view
+      </view>
+    </view>
+  </view>
+</view>

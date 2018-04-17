@@ -1,0 +1,6 @@
+<template id="template11" name="template11">
+  <view>{{ person.name }}</view>
+  <view>{{ person.age }}</view>
+</template>
+
+<view>template外11的内容{{ person.name }}</view>

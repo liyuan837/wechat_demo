@@ -1,24 +1,11 @@
-// pages/wxmltest/wxmltest.js
+// pages/eventtest/eventtest.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    id:1000,
-    name:"李袁",
-    isShow:true,
-    flag:false,
-    a:1,
-    b:2,
-    person:{name:'甄姬',age:10},
-    personList:[{
-      name:'Liyuan',
-      age:28
-    },{
-      name:'昭君',
-      age:22
-    }]
+  
   },
 
   /**
@@ -74,11 +61,22 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    console.log("s");
+  
   },
-  changeState:function(){
-    this.setData({
-      flag:!this.data.flag
-    })
+  bindtap1:function(e){
+    console.log(e);
+    console.log(e.target.dataset.name)
+  },
+  bindtap_outer:e => {
+    console.log("outer")
+    console.log(e)
+  },
+  bindtap_middle:e => {
+    console.log("middle")
+    console.log(e)
+  },
+  bindtap_inner:e => {
+    console.log("inner")
+    console.log(e)
   }
 })

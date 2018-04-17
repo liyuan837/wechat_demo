@@ -1,0 +1,13 @@
+
+
+<view>
+  <text>import引用</text>
+  <import src="/templates/template11.wxml" />
+  <template is="template11" data="{{ person }}"></template> 
+</view>
+
+<view>
+  <text>include引用</text>
+   <include src="/templates/template11.wxml" /> 
+   <template is="template11" data="{{ person }}"></template> 
+</view>

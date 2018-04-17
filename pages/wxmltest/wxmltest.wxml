@@ -1,9 +1,47 @@
 <view>
   <view id="item-{{id}}">{{name}}</view>
   <view wx:if="{{isShow}}">有木有</view>
-  <view wx:if="{{flag?false:true}}">有木有</view>
+  <block wx:if="{{flag?false:true}}">
+    <view>你妹的</view>
+    <view>有木有</view>
+  </block>
+  <button bindtap='changeState'>改变显示</button>
   <view>{{a+b}}</view>
   <view>{{a}}+{{b}}</view>
 
-  <button bindtap='changeState'>改变显示</button>
+  <view wx:for="{{ [a,6,7] }}">
+    <view>{{item}}</view>
+  </view>
+
+  <template name="template1">
+    <view>{{person[2].name}}</view>
+    <view>{{person[2].age}}</view>
+  </template>
+
+  <template is="template1" data="{{persion:[personList,person]}}"></template>
+
+  <template name="template2">
+    <view>{{person.name}}</view>
+    <view>{{person.age}}</view>
+  </template>
+
+  <template is="template2" data="{{person:personList[0]}}"></template>
+
+  <block wx:for="{{ personList }}" wx:for-item="p">
+    <view>
+      <text>{{p.name}}</text>
+      <text>{{p.age}}</text>
+    </view>
+  </block>
+
+  <template name="template3">
+   <view>
+    <text>{{ p.name }}</text>
+    <text>{{ p.age }}</text>
+   </view>
+  </template>
+
+  <block wx:for="{{ personList }}" wx:for-item="p">
+    <template is="{{flag ? 'template2':'template3'}}" data="{{ p }}"></template>
+  </block>
 </view>

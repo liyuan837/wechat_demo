@@ -1,0 +1,50 @@
+
+<view>
+  <text>网络请求</text>
+  <button type="primary" bindtap='bindRequest'>发起请求</button>
+
+  <text>上传图片</text>
+  <button type='primary' bindtap='bindUpload'>选择上传</button>
+
+  <text>下载文件</text>
+  <button type="primary" bindtap='bindDownload'>下载文件</button>
+
+  <text>选择图片</text>
+  <button type='primary' bindtap="bindChooseImg">选择图片</button>
+
+  <text>预览图片</text>
+  <button type='primary' bindtap='bindPreviewImg'>选择预览</button>
+
+  <text>获取图片信息</text>
+  <button type='primary' bindtap='bindGetImageInfo'>选择获取</button>
+
+  <text>保存图片至相册</text>
+  <button type='primary' bindtap='bindImageSave'>选择保存</button>
+
+  <text>背景音乐</text>
+  <button type='primary' bindtap='bindBgPause'>暂停</button>
+  <button type='primary' bindtap='bindBgPlay'>播放</button>
+  <button type='primary' bindtap='bindBgStop'>停止</button>
+  <button type='primary' bindtap='bindBgRestart'>重新播放</button>
+
+  <text>数据缓存</text>
+  <button type='primary' bindtap='bindSetStorage'>保存缓存数据</button>
+  <button type='primary' bindtap='bindGetStorage'>获取缓存数据</button>
+  <button type='primary' bindtap='bindGetStorageList'>获取缓存数据列表</button>
+  <button type='primary' bindtap='bindRemoveStorage'>移除缓存数据</button>
+  <button type='primary' bindtap='bindClearStorage'>清空缓存数据</button>
+
+  <text>位置</text>
+  <button type='primary' bindtap='bindGetLocation'>获取位置</button>
+  <button type='primary' bindtap='bindChooseLocation'>选择位置</button>
+
+  <text>拨打电话</text>
+  <button type='primary' bindtap='bindCallPhone'>拨打18260631810</button>
+
+  <text>扫码</text>
+  <button type='primary' bindtap='bindScan'>扫码</button>
+
+  <text>动画</text>
+  <button type='primary' bindtap='bindAnimation'>开始动画</button>
+  <view animation="{{animationData}}" style="background:red;height:100rpx;width:100rpx"></view>
+</view>

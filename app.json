@@ -4,7 +4,10 @@
     "pages/logs/logs",
     "pages/test/test",
     "pages/wxsstest/wxsstest",
-    "pages/wxmltest/wxmltest"
+    "pages/wxmltest/wxmltest",
+    "pages/eventtest/eventtest",
+    "pages/yinyongtest/yinyongtest",
+    "pages/apitest/apitest"
   ],
   "window": {
     "backgroundTextStyle": "dark",

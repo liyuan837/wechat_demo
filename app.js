@@ -1,6 +1,23 @@
 //app.js
+const backgroundAudioManager = wx.getBackgroundAudioManager()
+
+backgroundAudioManager.title = '千古'
+backgroundAudioManager.epname = '千古'
+backgroundAudioManager.singer = '阿朵'
+backgroundAudioManager.coverImgUrl = 'http://www.dyjkglass.com/qiangu.png'
+backgroundAudioManager.src = 'http://www.dyjkglass.com/qiangu.mp3' // 设置了 src 之后会自动播放
 App({
   onLaunch: function () {
+    backgroundAudioManager.onPause(function () {
+      console.log('暂停')
+    });
+    backgroundAudioManager.onPlay(function () {
+      console.log('开始')
+    });
+    backgroundAudioManager.onStop(function () {
+      console.log('停止')
+    });
+
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
